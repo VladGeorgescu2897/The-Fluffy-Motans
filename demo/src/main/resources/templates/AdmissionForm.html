@@ -1,28 +1,76 @@
 <html>
+<link href='http://fonts.googleapis.com/css?family=Merienda+One' rel='stylesheet' type='text/css'>
+<style>
+    .button {
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        -webkit-transition-duration: 0.4s; /* Safari */
+        transition-duration: 0.4s;
+        cursor: pointer;
+    }
+
+    .button1 {
+        background-color: white;
+        color: black;
+        border: 2px solid #4CAF50;
+    }
+
+    .button1:hover {
+        background-color: #4CAF50;
+        color: white;
+    }
+
+    h1 {
+        font: 200 35px/1.2 'Merienda One', Helvetica, sans-serif;
+        color: #4CAF50;
+        text-shadow: 3px 3px 3px #fff;
+    }
+
+    body {
+        width: 100%;
+        height: 2000px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .border {
+        position: fixed;
+        top: 0;
+        left: 0;
+        border: 6px solid #4CAF50;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+</style>
+
+
 <body>
-    <h1> STUDENT FORM</h1>
-<form action = "/submitAdmissionForm.html" method="post">
-    <p>
-        Student's Name: <input type="text" name="studentName" />
+<div class="border" align="center">
+    <h1>PARK MY CAR</h1>
+<form action = "/rezervare.html" method="post" style="font-family:verdana;">
+    <p >
+        Numar masina: <input type="text" name="numar" />
 
     </p>
-    <p>
-        Student Hobby: <input type="text" name="studentHobby" />
-
-    </p>
-    <input type="submit" value = "Submit">
+    <button class="button button1">"Rezerva acum!"</button>
+    <!--<input type="submit" value = "Rezerva acum!">-->
 </form>
 
-    <form action = "/submitAdmissionForm2.html" method="post">
-        <p>
-            Student's Name: <input type="text" name="studentName2" />
-
-        </p>
-        <p>
-            Student Hobby: <input type="text" name="studentHobby2" />
-
-        </p>
-        <input type="submit" value = "Submit2">
+    <form action = "/locuri_libere.html" method="post">
+        <button class="button button1">"Vezi locuri libere."</button>
+        <!--<input type="submit" value = "Vezi locuri libere.">-->
     </form>
+</div>
 </body>
+
 </html>
